@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+/* Подключаем твой конфиг, чтобы работали отступы и шрифты */
+@config "../tailwind.config.ts";
+
+@layer base {
+  :root {
+    --background: 220 20% 98%;
+    --foreground: 225 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 225 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 25% 15%;
+
+    --primary: 225 73% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 225 25% 25%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 16 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 92%;
+    --ring: 225 73% 47%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 225 30% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 225 25% 12%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 225 25% 12%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 225 73% 60%;
+    --primary-foreground: 225 25% 10%;
+
+    --secondary: 225 25% 15%;
+    --secondary-foreground: 220 15% 90%;
+
+    --muted: 225 25% 18%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 16 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 25% 20%;
+    --input: 225 25% 18%;
+    --ring: 225 73% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
