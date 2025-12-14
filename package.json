@@ -2,7 +2,7 @@
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Gaygysyz05.github.io/react-course-app",
+  "homepage": "https://gaygysyz05.github.io/react-course-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
